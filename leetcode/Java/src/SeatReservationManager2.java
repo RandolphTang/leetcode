@@ -2,35 +2,42 @@ import java.util.PriorityQueue;
 
 public class SeatReservationManager2 {
 
-    //This question is fairly easy if you use priorityQueue
-    //PQ automatically helps you to sort out value
-    //PQ is default min-priority, you can use reverseOrder() to change to max-priority
+    //This only used vector, which I guess saves runtime compared to
+    //Priority Queue for this problem
 
-    //Improtant methods of PQ to use in this problem
-    //offer(element) "push in" the new elements based on priority setting
+    private boolean[] seatM;
+    private int unreserved;
 
-    //not the best solution
+    private int min;
 
-    private PriorityQueue<Integer> seatManager;
-    private int pointer = 0;
 
     public SeatManager(int n) {
-
-            seatManager = new PriorityQueue<>();
-
+        seatM = new boolean[n + 1];
+        min = 1;
+        unreserved = 0;
     }
 
     public int reserve() {
-        if(seatManager.isEmpty()) {
-            return ++pointer;  //so at first no elements in seatManager, which considered all unreserved
-                                // then from min reserve the seat, if there continues unreserve method no calling
-                                // increment the pointer
-        } else {
-            return seatManager.poll(); // if there is unreserved seat, return the min
+        if(unreserved == 0) {
+            seatM[min] = true;
+            return min++;
         }
+
+        for(int i = 1; i < seatM.length; i++){
+            if(!seatM[i]) {
+                seatM[i] = true;
+                unreserved--;
+                return i;
+            }
+        }
+
+        return -1;
     }
 
     public void unreserve(int seatNumber) {
-        seatManager.offer(seatNumber);
+
+        seatM[seatNumber] = false;
+        unreserved++;
+
     }
 }
