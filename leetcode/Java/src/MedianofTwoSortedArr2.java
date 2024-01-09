@@ -48,7 +48,7 @@ public class MedianofTwoSortedArr2 {
             // after finding the four boundary points, we need to see
             // if they are the right partition to find median
 
-            if (left1 <= right1 && left2 <= right2) { // so
+            if (left1 <= right2 && left2 <= right1) { // so
                 if (total % 2 == 0) {
                     result = (Math.max(left1, left2) + Math.min(right1, right2)) / 2.0 ;
 
