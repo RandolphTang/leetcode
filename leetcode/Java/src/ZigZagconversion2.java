@@ -16,7 +16,7 @@ public class ZigZagconversion2 {
                     ans[index++] = s.charAt(j + sub); // if space existed between value in the same row
                                                         // use sub to increment to trace next target
                                                         // does not affect current value of j
-                                                        // which helps traces next value with constant main steps
+                                                        // (j) which helps traces next value with constant main steps
                 }
 
             }
