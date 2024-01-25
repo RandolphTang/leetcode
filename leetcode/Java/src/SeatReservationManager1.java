@@ -12,6 +12,9 @@ public class SeatReservationManager1 {
     private PriorityQueue<Integer> seatManager;
 
     public SeatManager(int n) {
+
+        seatManager = new PriorityQueue<Integer>();
+
         for(int i = 1; i < n + 1; i++) {
             seatManager.offer(i);
         }
