@@ -12,6 +12,13 @@ public class BusRoutes1 {
             }
         }
 
+
+        if(!hm.keySet().contains(source) ||
+                !hm.keySet().contains(target)) {
+            return -1;
+        }
+
+
         Queue<Integer>q  = new LinkedList<>();
         q.add(source);
 
