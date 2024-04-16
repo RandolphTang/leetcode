@@ -1,4 +1,4 @@
-package AmazonOA;
+package AmazonOA.MaximumSizeSubarraySumEqualsk;
 
 //Given an array nums and a target value k, find the maximum length of a subarray that sums to k. If there isn't one, return 0 instead.
 
@@ -24,7 +24,7 @@ package AmazonOA;
 //
 //然后再对比最大数值，得出答案。
 
-public class MaximumSizeSubarraySumEqualsk1 {
+public class first {
     public int maxSubArrayLen(int[] nums, int k) {
         // Write your code here
 
