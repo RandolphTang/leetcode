@@ -1,6 +1,6 @@
 package AmazonOA.MaximumErasureValue;
 
-public class second {
+public class solution2 {
     public int maximumUniqueSubarray(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;

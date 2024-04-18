@@ -24,7 +24,7 @@ package AmazonOA.MaximumSizeSubarraySumEqualsk;
 //
 //然后再对比最大数值，得出答案。
 
-public class first {
+public class solution1 {
     public int maxSubArrayLen(int[] nums, int k) {
         // Write your code here
 

@@ -1,7 +1,7 @@
 package AmazonOA.MaximumErasureValue;
 //slower in time complexity
 
-public class first {
+public class solution1 {
     public int maximumUniqueSubarray(int[] nums) {
         if(nums.length == 1){
             return nums[0];

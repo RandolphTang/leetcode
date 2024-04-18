@@ -1,6 +1,6 @@
 package AmazonOA.MaximumSizeSubarraySumEqualsk;
 
-public class second {
+public class solution2 {
 
     /**
      * @param nums: an array
