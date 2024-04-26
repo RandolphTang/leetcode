@@ -1,6 +1,6 @@
 package April.FindIfPathExistsinGraph;
 
-public class Solution2 {
+public class iSolution2 {
     private int[] disjointSet;
 
     public boolean validPath(int n, int[][] edges, int source, int destination) {
