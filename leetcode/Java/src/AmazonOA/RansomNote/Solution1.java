@@ -7,16 +7,13 @@ public class Solution1 {
         char[] n = ransomNote.toCharArray();
         char[] m = magazine.toCharArray();
 
-        for(char eachC: n){
+        for(char eachC: m){
             allCharR[eachC - 'a']++;
         }
 
-        for(char eachC: m){
-            allCharR[eachC - 'a']--;
-        }
-
         for(char eachC: n){
-            if(allCharR[eachC - 'a'] > 0) return false;
+
+            if(--allCharR[eachC - 'a'] < 0) return false;
         }
 
         return true;

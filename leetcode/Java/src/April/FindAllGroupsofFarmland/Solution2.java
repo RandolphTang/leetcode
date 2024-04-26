@@ -1,4 +1,4 @@
-package AprilWeek2.FindAllGroupsofFarmland;
+package April.FindAllGroupsofFarmland;
 
 public class Solution2 {
     public int[][] findFarmland(int[][] land) {

@@ -1,4 +1,4 @@
-package AprilWeek2.OpenTheLock;
+package April.OpenTheLock;
 
 public class Solution1 {
     public int openLock(String[] deadends, String target) {

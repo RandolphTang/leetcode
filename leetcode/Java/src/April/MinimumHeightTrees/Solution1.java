@@ -1,4 +1,4 @@
-package AprilWeek2.MinimumHeightTrees;
+package April.MinimumHeightTrees;
 
 public class Solution1 {
     public List<Integer> findMinHeightTrees(int n, int[][] edges) {

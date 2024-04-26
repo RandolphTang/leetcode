@@ -1,4 +1,4 @@
-package AprilWeek2.FindIfPathExistsinGraph;
+package April.FindIfPathExistsinGraph;
 
 public class Solution2 {
     private int[] disjointSet;

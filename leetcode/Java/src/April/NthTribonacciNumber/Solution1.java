@@ -1,4 +1,4 @@
-package AprilWeek2.NthTribonacciNumber;
+package April.NthTribonacciNumber;
 
 public class Solution1 {
     public int tribonacci(int n) {

@@ -1,4 +1,4 @@
-package AprilWeek2.FindIfPathExistsinGraph;
+package April.FindIfPathExistsinGraph;
 
 public class Solution3 {
     public boolean validPath(int n, int[][] edges, int source, int destination) {
