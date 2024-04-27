@@ -1,4 +1,4 @@
-package AprilWeek2.LongestIdealSubsequence;
+package April.LongestIdealSubsequence;
 
 public class Solution1 {
     public int longestIdealString(String s, int k) {
